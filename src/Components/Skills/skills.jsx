@@ -12,15 +12,23 @@ export default function Skills() {
   const [firstSkills, secondSkills] = splitSkills(skills);
 
   return (
-    <div className="grid md:grid-cols-2 m-[145px] md:ml-[220px] md:mr-[150px]">
-      <div className="rounded-lg">
+    <div className="grid md:grid-cols-2 m-[5%] md:mx-[10%] md:my-[5%]">
+      <div
+        className="rounded-lg"
+        data-aos="zoom-in-up"
+        data-aos-duration="2000"
+      >
         <Lottie animationData={work} />
       </div>
-      <div className="flex flex-col space-y-4 mt-8 md:mt-0 text-[#35dbd3]">
+      <div
+        className="flex flex-col space-y-4 mt-8 md:mt-0 text-[#35dbd3]"
+        data-aos="zoom-in-down"
+        data-aos-duration="2000"
+      >
         <h2 className="text-2xl font-bold text-center">
           <span className="border-b p-4 border-[#edaa82]">My Skills</span>
         </h2>
-        <div className="flex space-x-8 justify-center items-center p-10">
+        <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-16 justify-center items-center p-6 md:p-10">
           <SkillList skills={firstSkills} />
           <SkillList skills={secondSkills} />
         </div>

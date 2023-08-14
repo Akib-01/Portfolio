@@ -7,7 +7,12 @@ const LeftSide = ({ props, ul }) => {
     <div className={props}>
       <ul className={ul}>
         {data.map((items) => (
-          <li key={items.id} className="p-[10px] ml-8">
+          <li
+            key={items.id}
+            className="p-[10px] ml-8"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <Link to={items.link} target="_blank">
               <img
                 src={items.icon}
